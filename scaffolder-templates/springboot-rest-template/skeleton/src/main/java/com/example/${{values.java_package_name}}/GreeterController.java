@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RestController
 public class GreeterController {
 
-	@GetMapping(value = "/hello", produces = MediaType.APPLICATION_JSON_VALUE)
-    @ResponseBody
-    public String retrieveScenario(@RequestParam String name) {
-		return "Hello "+name+" !";
-	}
-	
+  @GetMapping(value = "/hello", produces = MediaType.APPLICATION_JSON_VALUE)
+  @ResponseBody
+  public String retrieveScenario(@RequestParam String name) {
+    return "Hello " + name + " !";
+  }
 }
