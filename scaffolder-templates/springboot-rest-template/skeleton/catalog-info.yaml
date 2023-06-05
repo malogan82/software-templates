@@ -8,6 +8,8 @@ metadata:
   annotations:
     github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
     backstage.io/techdocs-ref: dir:.
+    'jenkins.io/job-full-name': ${{values.component_id | dump}}
+    'backstage.io/kubernetes-id': ${{values.component_id | dump}}
 spec:
   type: service
   lifecycle: experimental
